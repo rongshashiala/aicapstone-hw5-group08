@@ -236,3 +236,6 @@ ontology/inferred-results.ttl
 | results/query-results.csv     | Query output                  |
 | src/                          | Source code                   |
 | README.md                     | Project documentation         |
+=======
+# aicapstone-hw5-group08
+>>>>>>> 378ab7247a31c446a54fe3e5cdbd39ea21eb93dd
