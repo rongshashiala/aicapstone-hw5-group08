@@ -233,6 +233,6 @@ ontology/inferred-results.ttl
 | ontology/group-ontology.ttl   | Main ontology                 |
 | ontology/inferred-results.ttl | Ontology with inferred axioms |
 | queries/query.rq              | SPARQL query                  |
-| results/query-results.csv     | Query output                  |
-| src/                          | Source code                   |
+| results/...                   | Query output                  |
+| src/...                       | Source code                   |
 | README.md                     | Project documentation         |
