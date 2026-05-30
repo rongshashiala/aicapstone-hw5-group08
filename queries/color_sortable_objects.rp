@@ -1,0 +1,11 @@
+PREFIX cap: <https://hcis.io/ontology/aicapstone/2026/>
+PREFIX g08: <https://hcis.io/ontology/aicapstone/2026/group08/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?obj ?label ?role
+WHERE {
+  ?obj a g08:ColorSortableObject .
+  OPTIONAL { ?obj cap:hasObjectLabel ?label . }
+  OPTIONAL { ?obj cap:hasTaskRole ?role . }
+}
+ORDER BY ?obj

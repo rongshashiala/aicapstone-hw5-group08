@@ -1,0 +1,549 @@
+@prefix : <https://hcis.io/ontology/aicapstone/2026/group08#> .
+@prefix cap: <https://hcis.io/ontology/aicapstone/2026/> .
+@prefix g08: <https://hcis.io/ontology/aicapstone/2026/group08/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://hcis.io/ontology/aicapstone/2026/group08#> .
+
+<https://hcis.io/ontology/aicapstone/2026/group08> rdf:type owl:Ontology ;
+                                                    dcterms:created "2026-05-22"^^xsd:date ;
+                                                    dcterms:creator cap:ccyont ;
+                                                    dcterms:description "This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."@en ;
+                                                    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                    dcterms:title "AI Capstone 2026 Course Ontology"@en ;
+                                                    vann:preferredNamespacePrefix "cap" ;
+                                                    vann:preferredNamespaceUri "https://hcis.io/ontology/aicapstone/2026/" ;
+                                                    rdfs:comment "A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."@en ;
+                                                    rdfs:label "AI Capstone 2026 Course Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy
+cap:canBeManipulatedBy rdf:type owl:ObjectProperty ;
+                       rdfs:domain cap:PhysicalObject ;
+                       rdfs:range cap:EndEffector ;
+                       rdfs:comment "Relates a physical object to an end effector capable of manipulating it."@en ;
+                       rdfs:label "can be manipulated by"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasAffordance
+cap:hasAffordance rdf:type owl:ObjectProperty ;
+                  rdfs:domain cap:PhysicalObject ;
+                  rdfs:range cap:Affordance ;
+                  rdfs:comment "Relates a physical object to an affordance associated with that object in the task context."@en ;
+                  rdfs:label "has affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasReferenceObject
+cap:hasReferenceObject rdf:type owl:ObjectProperty ;
+                       rdfs:domain cap:Task ;
+                       rdfs:range cap:PhysicalObject ;
+                       rdfs:comment "Relates a task to a physical object used as a spatial or semantic reference."@en ;
+                       rdfs:label "has reference object"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasTargetObject
+cap:hasTargetObject rdf:type owl:ObjectProperty ;
+                    rdfs:domain cap:Task ;
+                    rdfs:range cap:PhysicalObject ;
+                    rdfs:comment "Relates a task to a physical object that is directly acted upon in that task."@en ;
+                    rdfs:label "has target object"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasTaskRole
+cap:hasTaskRole rdf:type owl:ObjectProperty ;
+                rdfs:domain cap:PhysicalObject ;
+                rdfs:range cap:TaskRole ;
+                rdfs:comment "Relates a physical object to the role it plays in a task."@en ;
+                rdfs:label "has task role"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://hcis.io/ontology/aicapstone/2026/hasApproxWidth
+cap:hasApproxWidth rdf:type owl:DatatypeProperty ;
+                   rdfs:domain cap:PhysicalObject ;
+                   rdfs:range xsd:decimal .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasColor
+cap:hasColor rdf:type owl:DatatypeProperty ;
+             rdfs:domain cap:PhysicalObject ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Records the perceived or assigned color of a physical object."@en ;
+             rdfs:label "has color"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasObjectLabel
+cap:hasObjectLabel rdf:type owl:DatatypeProperty ;
+                   rdfs:domain cap:PhysicalObject ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Records the object label used by perception, simulation, or task documentation."@en ;
+                   rdfs:label "has object label"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/hasPoseFrame
+cap:hasPoseFrame rdf:type owl:DatatypeProperty ;
+                 rdfs:domain cap:PhysicalObject ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."@en ;
+                 rdfs:label "has pose frame"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Affordance
+cap:Affordance rdf:type owl:Class ;
+               rdfs:comment "An action possibility associated with an object in relation to a robot capability and task context."@en ;
+               rdfs:label "affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Basket
+cap:Basket rdf:type owl:Class ;
+           rdfs:subClassOf cap:PhysicalObject ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty cap:hasAffordance ;
+                             owl:someValuesFrom cap:ContainmentAffordance
+                           ] ;
+           rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ,
+                        "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
+           rdfs:label "basket"@en ,
+                      "has approximate width"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/CollectableObject
+cap:CollectableObject rdf:type owl:Class ;
+                      rdfs:subClassOf cap:TaskRole .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ContainerTarget
+cap:ContainerTarget rdf:type owl:Class ;
+                    rdfs:subClassOf cap:TaskRole .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance
+cap:ContainmentAffordance rdf:type owl:Class ;
+                          rdfs:subClassOf cap:Affordance ;
+                          rdfs:comment "An affordance by which an object can contain or receive other objects."@en ;
+                          rdfs:label "containment affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Cup
+cap:Cup rdf:type owl:Class ;
+        rdfs:subClassOf cap:PhysicalObject ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cap:hasAffordance ;
+                          owl:someValuesFrom cap:GraspingAffordance
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty cap:hasAffordance ;
+                          owl:someValuesFrom cap:StackabilityAffordance
+                        ] ;
+        rdfs:comment "A container-like object used in the cup-stacking task."@en ;
+        rdfs:label "cup"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/EndEffector
+cap:EndEffector rdf:type owl:Class ;
+                rdfs:comment "A robot component used to physically interact with objects, such as a gripper."@en ;
+                rdfs:label "end effector"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Fork
+cap:Fork rdf:type owl:Class ;
+         rdfs:subClassOf cap:PhysicalObject ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty cap:hasAffordance ;
+                           owl:someValuesFrom cap:GraspingAffordance
+                         ] ;
+         rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
+         rdfs:label "fork"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/GraspingAffordance
+cap:GraspingAffordance rdf:type owl:Class ;
+                       rdfs:subClassOf cap:Affordance ;
+                       rdfs:comment "An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."@en ;
+                       rdfs:label "grasping affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Knife
+cap:Knife rdf:type owl:Class ;
+          rdfs:subClassOf cap:PhysicalObject ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty cap:hasAffordance ;
+                            owl:someValuesFrom cap:GraspingAffordance
+                          ] ;
+          rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
+          rdfs:label "knife"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ManipulationTask
+cap:ManipulationTask rdf:type owl:Class ;
+                     rdfs:subClassOf cap:Task ;
+                     rdfs:comment "A task in which a robot changes the pose, state, or arrangement of physical objects."@en ;
+                     rdfs:label "manipulation task"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/PhysicalObject
+cap:PhysicalObject rdf:type owl:Class ;
+                   rdfs:comment "A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."@en ;
+                   rdfs:label "physical object"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Plate
+cap:Plate rdf:type owl:Class ;
+          rdfs:subClassOf cap:PhysicalObject ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty cap:hasAffordance ;
+                            owl:someValuesFrom cap:SupportAffordance
+                          ] ;
+          rdfs:comment "A reference object used for arranging cutlery in the cutlery-arrangement task."@en ;
+          rdfs:label "plate"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ReferenceObject
+cap:ReferenceObject rdf:type owl:Class ;
+                    rdfs:subClassOf cap:TaskRole .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/RobotAgent
+cap:RobotAgent rdf:type owl:Class ;
+               rdfs:comment "A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."@en ;
+               rdfs:label "robot agent"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance
+cap:StackabilityAffordance rdf:type owl:Class ;
+                           rdfs:subClassOf cap:Affordance ;
+                           rdfs:comment "An affordance by which an object can participate in a stacking relation with another object."@en ;
+                           rdfs:label "stackability affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/SupportAffordance
+cap:SupportAffordance rdf:type owl:Class ;
+                      rdfs:subClassOf cap:Affordance ;
+                      rdfs:comment "An affordance by which an object can support the placement or arrangement of other objects."@en ;
+                      rdfs:label "support affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/TargetObject
+cap:TargetObject rdf:type owl:Class ;
+                 rdfs:subClassOf cap:TaskRole .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/Task
+cap:Task rdf:type owl:Class ;
+         rdfs:comment "A goal-directed activity to be performed or evaluated in the course project."@en ;
+         rdfs:label "task"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/TaskRole
+cap:TaskRole rdf:type owl:Class ;
+             rdfs:comment "A role that an object plays within a task."@en ;
+             rdfs:label "task role"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ToyBlock
+cap:ToyBlock rdf:type owl:Class ;
+             rdfs:subClassOf cap:PhysicalObject ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty cap:hasAffordance ;
+                               owl:someValuesFrom cap:GraspingAffordance
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty cap:hasAffordance ;
+                               owl:someValuesFrom g08:ColorSortingAffordance
+                             ] ;
+             rdfs:comment "A small object to be collected into the basket in the toy-block-collection task."@en ;
+             rdfs:label "toy block"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject
+g08:ColorSortableObject rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( cap:PhysicalObject
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty cap:hasAffordance ;
+                                                                     owl:someValuesFrom g08:ColorSortingAffordance
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf cap:PhysicalObject ;
+                        rdfs:comment "color-sortable object" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance
+g08:ColorSortingAffordance rdf:type owl:Class ;
+                           rdfs:subClassOf cap:Affordance ;
+                           rdfs:comment "An affordance by which an object can be sorted by its color." ;
+                           rdfs:label "color sorting affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket
+g08:ColorSortingBasket rdf:type owl:Class ;
+                       rdfs:subClassOf cap:Basket ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cap:hasAffordance ;
+                                         owl:someValuesFrom g08:ColorSortingAffordance
+                                       ] .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject
+g08:GraspableObject rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( cap:PhysicalObject
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty cap:hasAffordance ;
+                                                                 owl:someValuesFrom cap:GraspingAffordance
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf cap:PhysicalObject ;
+                    rdfs:label "graspable object"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://hcis.io/ontology/aicapstone/2026/CollectableObject
+cap:CollectableObject rdf:type owl:NamedIndividual ,
+                               cap:CollectableObject .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ContainerTarget
+cap:ContainerTarget rdf:type owl:NamedIndividual ,
+                             cap:ContainerTarget .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ReferenceObject
+cap:ReferenceObject rdf:type owl:NamedIndividual ,
+                             cap:ReferenceObject .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/TargetObject
+cap:TargetObject rdf:type owl:NamedIndividual ,
+                          cap:TargetObject .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/ccyont
+cap:ccyont rdf:type owl:NamedIndividual ,
+                    foaf:Person ;
+           foaf:mbox <mailto:ccy@hptp.org> ;
+           foaf:name "Chun-yien Chang"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01
+g08:baselineBasket01 rdf:type owl:NamedIndividual ,
+                              cap:Basket ;
+                     cap:hasTaskRole cap:ContainerTarget ;
+                     cap:hasObjectLabel "baseline_basket" ;
+                     cap:hasPoseFrame "world/object_baseline_basket" ;
+                     rdfs:comment "The baseline basket instance defined by Group 08 for the baseline toyblock-collecting task." ;
+                     rdfs:label "baseline basket 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01
+g08:blueBasket01 rdf:type owl:NamedIndividual ,
+                          g08:ColorSortingBasket ;
+                 cap:hasTaskRole cap:ContainerTarget ;
+                 cap:hasColor "blue" ;
+                 cap:hasObjectLabel "blue basket" ;
+                 cap:hasPoseFrame "world/object_blue_basket" ;
+                 rdfs:comment "The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+                 rdfs:label "blue basket 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01
+g08:blueBlock01 rdf:type owl:NamedIndividual ,
+                         cap:ToyBlock ;
+                cap:hasTaskRole cap:CollectableObject ;
+                cap:hasColor "blue" ;
+                cap:hasObjectLabel "blue block" ;
+                cap:hasPoseFrame "world/object_blue_block" ;
+                rdfs:comment "The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+                rdfs:label "blue block 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/blueCup01
+g08:blueCup01 rdf:type owl:NamedIndividual ,
+                       cap:Cup ;
+              cap:hasTaskRole cap:TargetObject ;
+              cap:hasColor "blue" ;
+              cap:hasObjectLabel "blue_cup" ;
+              cap:hasPoseFrame "world/object_blue_cup" ;
+              rdfs:comment "The blue cup instance defined by Group 08 for the baseline cup-stacking task." ;
+              rdfs:label "blue cup 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/fork01
+g08:fork01 rdf:type owl:NamedIndividual ,
+                    cap:Fork ;
+           cap:hasTaskRole cap:TargetObject ;
+           cap:hasObjectLabel "fork" ;
+           cap:hasPoseFrame "world/object_fork" ;
+           rdfs:comment "The fork instance defined by Group 08 for the baseline cutlery arrangement task." ;
+           rdfs:label "fork 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01
+g08:greenBasket01 rdf:type owl:NamedIndividual ,
+                           g08:ColorSortingBasket ;
+                  cap:hasTaskRole cap:ContainerTarget ;
+                  cap:hasColor "green" ;
+                  cap:hasObjectLabel "green basket" ;
+                  cap:hasPoseFrame "world/object_green/basket" ;
+                  rdfs:comment "The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+                  rdfs:label "green basket 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01
+g08:greenBlock01 rdf:type owl:NamedIndividual ,
+                          cap:ToyBlock ;
+                 cap:hasTaskRole cap:CollectableObject ;
+                 cap:hasColor "green" ;
+                 cap:hasObjectLabel "green block" ;
+                 cap:hasPoseFrame "world/object_green_block" ;
+                 rdfs:comment "The green block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+                 rdfs:label "green block 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/knife01
+g08:knife01 rdf:type owl:NamedIndividual ,
+                     cap:Knife ;
+            cap:hasTaskRole cap:TargetObject ;
+            cap:hasObjectLabel "knife" ;
+            cap:hasPoseFrame "world/object_knife" ;
+            rdfs:comment "The knife instance defined by Group 08 for the baseline cutlery arrangement task." ;
+            rdfs:label "knife 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01
+g08:pinkCup01 rdf:type owl:NamedIndividual ,
+                       cap:Cup ;
+              cap:hasTaskRole cap:ReferenceObject ;
+              cap:hasColor "pink" ;
+              cap:hasObjectLabel "pink_cup" ;
+              cap:hasPoseFrame "world/object_pink_cup" ;
+              rdfs:comment "The pink cup instance defined by Group 08 for the baseline cup-stacking task." ;
+              rdfs:label "pink cup 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/plate01
+g08:plate01 rdf:type owl:NamedIndividual ,
+                     cap:Plate ;
+            cap:hasTaskRole cap:ReferenceObject ;
+            cap:hasObjectLabel "plate" ;
+            cap:hasPoseFrame "world/object_plate" ;
+            rdfs:comment "The plate instance defined by Group 08 for the baseline cutlery arrangement task." ;
+            rdfs:label "plate 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/redBasket01
+g08:redBasket01 rdf:type owl:NamedIndividual ,
+                         g08:ColorSortingBasket ;
+                cap:hasTaskRole cap:ContainerTarget ;
+                cap:hasColor "red" ;
+                cap:hasObjectLabel "red basket" ;
+                cap:hasPoseFrame "world/object_red_basket" ;
+                rdfs:comment "The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+                rdfs:label "red basket 01" .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/redBlock01
+g08:redBlock01 rdf:type owl:NamedIndividual ,
+                        cap:ToyBlock ;
+               cap:hasTaskRole cap:CollectableObject ;
+               cap:hasColor "red" ;
+               cap:hasObjectLabel "red block" ;
+               cap:hasPoseFrame "world/object_red_block" ;
+               rdfs:comment "The red block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
+               rdfs:label "red block 01" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+cap:CollectableObject rdfs:comment "A task role for an object that should be collected into another object or location."@en ;
+                      rdfs:label "collectable object"@en .
+
+
+cap:ContainerTarget rdfs:comment "A task role for an object that receives or contains other objects."@en ;
+                    rdfs:label "container target"@en .
+
+
+cap:ReferenceObject rdfs:comment "A task role for an object used as a spatial or semantic reference for arranging other objects."@en ;
+                    rdfs:label "reference object"@en .
+
+
+cap:TargetObject rdfs:comment "A task role for an object that is directly acted upon or manipulated."@en ;
+                 rdfs:label "target object"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
