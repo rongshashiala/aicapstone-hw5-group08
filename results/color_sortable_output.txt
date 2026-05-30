@@ -1,0 +1,6 @@
+g08:blueBasket01	blue_basket^^xsd:string	    cap:ContainerTarget	
+g08:blueBlock01	    blue_block^^xsd:string	    cap:CollectableObject	
+g08:greenBasket01	green_basket^^xsd:string	cap:ContainerTarget	
+g08:greenBlock01	green_block^^xsd:string	    cap:CollectableObject	
+g08:redBasket01	    red_basket^^xsd:string	    cap:ContainerTarget	
+g08:redBlock01	    red_block^^xsd:string	    cap:CollectableObject

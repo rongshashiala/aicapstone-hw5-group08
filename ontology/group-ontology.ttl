@@ -121,7 +121,9 @@ cap:hasTaskRole rdf:type owl:ObjectProperty ;
 ###  https://hcis.io/ontology/aicapstone/2026/hasApproxWidth
 cap:hasApproxWidth rdf:type owl:DatatypeProperty ;
                    rdfs:domain cap:PhysicalObject ;
-                   rdfs:range xsd:decimal .
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
+                   rdfs:label "has approximate width"@en .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/hasColor
@@ -169,10 +171,8 @@ cap:Basket rdf:type owl:Class ;
                              owl:onProperty cap:hasAffordance ;
                              owl:someValuesFrom cap:ContainmentAffordance
                            ] ;
-           rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ,
-                        "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
-           rdfs:label "basket"@en ,
-                      "has approximate width"@en .
+           rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ;
+           rdfs:label "basket"@en .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/CollectableObject
@@ -413,7 +413,7 @@ g08:blueBasket01 rdf:type owl:NamedIndividual ,
                           g08:ColorSortingBasket ;
                  cap:hasTaskRole cap:ContainerTarget ;
                  cap:hasColor "blue" ;
-                 cap:hasObjectLabel "blue basket" ;
+                 cap:hasObjectLabel "blue_basket" ;
                  cap:hasPoseFrame "world/object_blue_basket" ;
                  rdfs:comment "The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                  rdfs:label "blue basket 01" .
@@ -424,7 +424,7 @@ g08:blueBlock01 rdf:type owl:NamedIndividual ,
                          cap:ToyBlock ;
                 cap:hasTaskRole cap:CollectableObject ;
                 cap:hasColor "blue" ;
-                cap:hasObjectLabel "blue block" ;
+                cap:hasObjectLabel "blue_block" ;
                 cap:hasPoseFrame "world/object_blue_block" ;
                 rdfs:comment "The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                 rdfs:label "blue block 01" .
@@ -456,7 +456,7 @@ g08:greenBasket01 rdf:type owl:NamedIndividual ,
                            g08:ColorSortingBasket ;
                   cap:hasTaskRole cap:ContainerTarget ;
                   cap:hasColor "green" ;
-                  cap:hasObjectLabel "green basket" ;
+                  cap:hasObjectLabel "green_basket" ;
                   cap:hasPoseFrame "world/object_green/basket" ;
                   rdfs:comment "The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                   rdfs:label "green basket 01" .
@@ -467,7 +467,7 @@ g08:greenBlock01 rdf:type owl:NamedIndividual ,
                           cap:ToyBlock ;
                  cap:hasTaskRole cap:CollectableObject ;
                  cap:hasColor "green" ;
-                 cap:hasObjectLabel "green block" ;
+                 cap:hasObjectLabel "green_block" ;
                  cap:hasPoseFrame "world/object_green_block" ;
                  rdfs:comment "The green block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                  rdfs:label "green block 01" .
@@ -509,7 +509,7 @@ g08:redBasket01 rdf:type owl:NamedIndividual ,
                          g08:ColorSortingBasket ;
                 cap:hasTaskRole cap:ContainerTarget ;
                 cap:hasColor "red" ;
-                cap:hasObjectLabel "red basket" ;
+                cap:hasObjectLabel "red_basket" ;
                 cap:hasPoseFrame "world/object_red_basket" ;
                 rdfs:comment "The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                 rdfs:label "red basket 01" .
@@ -520,7 +520,7 @@ g08:redBlock01 rdf:type owl:NamedIndividual ,
                         cap:ToyBlock ;
                cap:hasTaskRole cap:CollectableObject ;
                cap:hasColor "red" ;
-               cap:hasObjectLabel "red block" ;
+               cap:hasObjectLabel "red_block" ;
                cap:hasPoseFrame "world/object_red_block" ;
                rdfs:comment "The red block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                rdfs:label "red block 01" .

@@ -1,0 +1,7 @@
+g08:blueBlock01	    blue_block^^xsd:string	cap:CollectableObject	
+g08:blueCup01	    blue_cup^^xsd:string	cap:TargetObject	
+g08:fork01	        fork^^xsd:string	    cap:TargetObject	
+g08:greenBlock01	green_block^^xsd:string	cap:CollectableObject	
+g08:knife01	        knife^^xsd:string	    cap:TargetObject	
+g08:pinkCup01	    pink_cup^^xsd:string	cap:ReferenceObject	
+g08:redBlock01	    red_block^^xsd:string	cap:CollectableObject
