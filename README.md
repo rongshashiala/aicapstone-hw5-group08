@@ -223,6 +223,7 @@ Reasoner → Export inferred axioms as ontology
 ```
 ontology/inferred-results.ttl
 ```
+7. For better readability, open the newly saved inferred-results.ttl in Protégé, add the prefixes for cap and g08, then save and close the file.
 
 ---
 

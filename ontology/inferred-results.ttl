@@ -118,7 +118,9 @@ cap:hasTaskRole rdf:type owl:ObjectProperty ;
 ###  https://hcis.io/ontology/aicapstone/2026/hasApproxWidth
 cap:hasApproxWidth rdf:type owl:DatatypeProperty ;
                    rdfs:domain cap:PhysicalObject ;
-                   rdfs:range xsd:decimal .
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
+                   rdfs:label "has approximate width"@en .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/hasColor
@@ -162,19 +164,12 @@ cap:Affordance rdf:type owl:Class ;
 ###  https://hcis.io/ontology/aicapstone/2026/Basket
 cap:Basket rdf:type owl:Class ;
            rdfs:subClassOf cap:PhysicalObject ,
-                           g08:ColorSortableObject ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty cap:hasAffordance ;
                              owl:someValuesFrom cap:ContainmentAffordance
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty cap:hasAffordance ;
-                             owl:someValuesFrom g08:ColorSortingAffordance
                            ] ;
-           rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ,
-                        "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
-           rdfs:label "basket"@en ,
-                      "has approximate width"@en .
+           rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ;
+           rdfs:label "basket"@en .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/CollectableObject
@@ -334,7 +329,8 @@ g08:ColorSortableObject rdf:type owl:Class ;
                                                                  ) ;
                                               rdf:type owl:Class
                                             ] ;
-                        rdfs:subClassOf cap:PhysicalObject .
+                        rdfs:subClassOf cap:PhysicalObject ;
+                        rdfs:comment "color-sortable object" .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance
@@ -342,6 +338,16 @@ g08:ColorSortingAffordance rdf:type owl:Class ;
                            rdfs:subClassOf cap:Affordance ;
                            rdfs:comment "An affordance by which an object can be sorted by its color." ;
                            rdfs:label "color sorting affordance"@en .
+
+
+###  https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket
+g08:ColorSortingBasket rdf:type owl:Class ;
+                       rdfs:subClassOf cap:Basket ,
+                                       g08:ColorSortableObject ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cap:hasAffordance ;
+                                         owl:someValuesFrom g08:ColorSortingAffordance
+                                       ] .
 
 
 ###  https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject
@@ -396,8 +402,7 @@ cap:ccyont rdf:type owl:NamedIndividual ,
 ###  https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01
 g08:baselineBasket01 rdf:type owl:NamedIndividual ,
                               cap:Basket ,
-                              cap:PhysicalObject ,
-                              g08:ColorSortableObject ;
+                              cap:PhysicalObject ;
                      cap:hasTaskRole cap:ContainerTarget ;
                      cap:hasObjectLabel "baseline_basket" ;
                      cap:hasPoseFrame "world/object_baseline_basket" ;
@@ -409,10 +414,11 @@ g08:baselineBasket01 rdf:type owl:NamedIndividual ,
 g08:blueBasket01 rdf:type owl:NamedIndividual ,
                           cap:Basket ,
                           cap:PhysicalObject ,
-                          g08:ColorSortableObject ;
+                          g08:ColorSortableObject ,
+                          g08:ColorSortingBasket ;
                  cap:hasTaskRole cap:ContainerTarget ;
                  cap:hasColor "blue" ;
-                 cap:hasObjectLabel "blue basket" ;
+                 cap:hasObjectLabel "blue_basket" ;
                  cap:hasPoseFrame "world/object_blue_basket" ;
                  rdfs:comment "The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                  rdfs:label "blue basket 01" .
@@ -426,7 +432,7 @@ g08:blueBlock01 rdf:type owl:NamedIndividual ,
                          g08:GraspableObject ;
                 cap:hasTaskRole cap:CollectableObject ;
                 cap:hasColor "blue" ;
-                cap:hasObjectLabel "blue block" ;
+                cap:hasObjectLabel "blue_block" ;
                 cap:hasPoseFrame "world/object_blue_block" ;
                 rdfs:comment "The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                 rdfs:label "blue block 01" .
@@ -461,10 +467,11 @@ g08:fork01 rdf:type owl:NamedIndividual ,
 g08:greenBasket01 rdf:type owl:NamedIndividual ,
                            cap:Basket ,
                            cap:PhysicalObject ,
-                           g08:ColorSortableObject ;
+                           g08:ColorSortableObject ,
+                           g08:ColorSortingBasket ;
                   cap:hasTaskRole cap:ContainerTarget ;
                   cap:hasColor "green" ;
-                  cap:hasObjectLabel "green basket" ;
+                  cap:hasObjectLabel "green_basket" ;
                   cap:hasPoseFrame "world/object_green/basket" ;
                   rdfs:comment "The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                   rdfs:label "green basket 01" .
@@ -478,7 +485,7 @@ g08:greenBlock01 rdf:type owl:NamedIndividual ,
                           g08:GraspableObject ;
                  cap:hasTaskRole cap:CollectableObject ;
                  cap:hasColor "green" ;
-                 cap:hasObjectLabel "green block" ;
+                 cap:hasObjectLabel "green_block" ;
                  cap:hasPoseFrame "world/object_green_block" ;
                  rdfs:comment "The green block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                  rdfs:label "green block 01" .
@@ -524,10 +531,11 @@ g08:plate01 rdf:type owl:NamedIndividual ,
 g08:redBasket01 rdf:type owl:NamedIndividual ,
                          cap:Basket ,
                          cap:PhysicalObject ,
-                         g08:ColorSortableObject ;
+                         g08:ColorSortableObject ,
+                         g08:ColorSortingBasket ;
                 cap:hasTaskRole cap:ContainerTarget ;
                 cap:hasColor "red" ;
-                cap:hasObjectLabel "red basket" ;
+                cap:hasObjectLabel "red_basket" ;
                 cap:hasPoseFrame "world/object_red_basket" ;
                 rdfs:comment "The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                 rdfs:label "red basket 01" .
@@ -541,7 +549,7 @@ g08:redBlock01 rdf:type owl:NamedIndividual ,
                         g08:GraspableObject ;
                cap:hasTaskRole cap:CollectableObject ;
                cap:hasColor "red" ;
-               cap:hasObjectLabel "red block" ;
+               cap:hasObjectLabel "red_block" ;
                cap:hasPoseFrame "world/object_red_block" ;
                rdfs:comment "The red block instance defined by Group 08 for toy-block collection and color-sorting tasks." ;
                rdfs:label "red block 01" .
