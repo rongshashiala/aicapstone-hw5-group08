@@ -1,0 +1,19 @@
+QUERY: task_objects
+Reasoner: owlrl (OWL RL / RDF(S) closure)
+====================================================================================================
+obj                    label                  color    role                   GraspableObj   ColorSortableObj
+----------------------------------------------------------------------------------------------------
+blueBlock01            blue_block             blue     CollectableObject      true           true
+greenBlock01           green_block            green    CollectableObject      true           true
+redBlock01             red_block              red      CollectableObject      true           true
+baselineBasket01       baseline_basket        -        ContainerTarget        false          false
+blueBasket01           blue_basket            blue     ContainerTarget        false          true
+greenBasket01          green_basket           green    ContainerTarget        false          true
+redBasket01            red_basket             red      ContainerTarget        false          true
+pinkCup01              pink_cup               pink     ReferenceObject        true           false
+plate01                plate                  -        ReferenceObject        false          false
+blueCup01              blue_cup               blue     TargetObject           true           false
+fork01                 fork                   -        TargetObject           true           false
+knife01                knife                  -        TargetObject           true           false
+
+Total task object instances: 12

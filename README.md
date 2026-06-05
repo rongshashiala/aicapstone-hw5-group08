@@ -229,11 +229,12 @@ ontology/inferred-results.ttl
 
 ## 10. Project Files
 
-| File                          | Description                   |
-| ----------------------------- | ----------------------------- |
-| ontology/group-ontology.ttl   | Main ontology                 |
-| ontology/inferred-results.ttl | Ontology with inferred axioms |
-| queries/query.rq              | SPARQL query                  |
-| results/...                   | Query output                  |
-| src/...                       | Source code                   |
-| README.md                     | Project documentation         |
+| File                                    | Description                          |
+| --------------------------------------- | ------------------------------------ |
+| ontology/group-ontology.ttl             | Main ontology                        |
+| ontology/inferred-results.ttl           | Ontology with inferred axioms        |
+| queries/graspable_object.rp             | Query: all GraspableObjects          |
+| queries/color_sortable_objects.rp       | Query: all ColorSortableObjects      |
+| queries/task_objects.rq                 | Query: all task objects (combined)   |
+| results/...                             | Query output and screenshots         |
+| README.md                               | Project documentation                |

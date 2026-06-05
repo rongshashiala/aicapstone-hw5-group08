@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>AI Capstone 2026 Course Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://hcis.io/ontology/aicapstone/2026/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://hcis.io/ontology/aicapstone/2026/","name":"AI Capstone 2026 Course Ontology", "headline":"Document describing the ontology https://hcis.io/ontology/aicapstone/2026/", "dateReleased":"2026-05-22", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Chun-yien Chang","url":"https://hcis.io/ontology/aicapstone/2026/ccyont"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>AI Capstone 2026 Course Ontology</h1>
+<h2>Release: 2026-05-22</h2>
+
+
+<dl>
+<dt>Authors:</dt>
+<dd><a href="https://hcis.io/ontology/aicapstone/2026/ccyont">Chun-yien Chang</a><a href="mailto:ccy@hptp.org">&#9993;</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Chun-yien Chang. AI Capstone 2026 Course Ontology.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">AI Capstone 2026 Course Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Affordance"
+         title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a>
+   </li>
+   <li>
+      <a href="#Basket" title="https://hcis.io/ontology/aicapstone/2026/Basket">basket</a>
+   </li>
+   <li>
+      <a href="#CollectableObject"
+         title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">
+         <span>collectable object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#group08/ColorSortableObject"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject">
+         <span>Color Sortable Object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#group08/ColorSortingAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance">color sorting affordance</a>
+   </li>
+   <li>
+      <a href="#group08/ColorSortingBasket"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket">
+         <span>Color Sorting Basket</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ContainerTarget"
+         title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">
+         <span>container target</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ContainmentAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance">containment affordance</a>
+   </li>
+   <li>
+      <a href="#Cup" title="https://hcis.io/ontology/aicapstone/2026/Cup">cup</a>
+   </li>
+   <li>
+      <a href="#EndEffector"
+         title="https://hcis.io/ontology/aicapstone/2026/EndEffector">end effector</a>
+   </li>
+   <li>
+      <a href="#Fork" title="https://hcis.io/ontology/aicapstone/2026/Fork">fork</a>
+   </li>
+   <li>
+      <a href="#group08/GraspableObject"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject">graspable object</a>
+   </li>
+   <li>
+      <a href="#GraspingAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/GraspingAffordance">grasping affordance</a>
+   </li>
+   <li>
+      <a href="#Knife" title="https://hcis.io/ontology/aicapstone/2026/Knife">knife</a>
+   </li>
+   <li>
+      <a href="#ManipulationTask"
+         title="https://hcis.io/ontology/aicapstone/2026/ManipulationTask">manipulation task</a>
+   </li>
+   <li>
+      <a href="#PhysicalObject"
+         title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a>
+   </li>
+   <li>
+      <a href="#Plate" title="https://hcis.io/ontology/aicapstone/2026/Plate">plate</a>
+   </li>
+   <li>
+      <a href="#ReferenceObject"
+         title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">
+         <span>reference object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RobotAgent"
+         title="https://hcis.io/ontology/aicapstone/2026/RobotAgent">robot agent</a>
+   </li>
+   <li>
+      <a href="#StackabilityAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance">stackability affordance</a>
+   </li>
+   <li>
+      <a href="#SupportAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/SupportAffordance">support affordance</a>
+   </li>
+   <li>
+      <a href="#TargetObject"
+         title="https://hcis.io/ontology/aicapstone/2026/TargetObject">
+         <span>target object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Task" title="https://hcis.io/ontology/aicapstone/2026/Task">task</a>
+   </li>
+   <li>
+      <a href="#TaskRole"
+         title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a>
+   </li>
+   <li>
+      <a href="#ToyBlock"
+         title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#canBeManipulatedBy"
+         title="https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy">can be manipulated by</a>
+   </li>
+   <li>
+      <a href="#hasAffordance"
+         title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a>
+   </li>
+   <li>
+      <a href="#hasReferenceObject"
+         title="https://hcis.io/ontology/aicapstone/2026/hasReferenceObject">has reference object</a>
+   </li>
+   <li>
+      <a href="#hasTargetObject"
+         title="https://hcis.io/ontology/aicapstone/2026/hasTargetObject">has target object</a>
+   </li>
+   <li>
+      <a href="#hasTaskRole"
+         title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasApproxWidth"
+         title="https://hcis.io/ontology/aicapstone/2026/hasApproxWidth">has approximate width</a>
+   </li>
+   <li>
+      <a href="#hasColor"
+         title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a>
+   </li>
+   <li>
+      <a href="#hasObjectLabel"
+         title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a>
+   </li>
+   <li>
+      <a href="#hasPoseFrame"
+         title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/mbox" title="http://xmlns.com/foaf/0.1/mbox">
+         <span>mbox</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">
+         <span>name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+         title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+         <span>preferred Namespace Prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred Namespace Uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#group08/baselineBasket01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01">baseline basket 01</a>
+   </li>
+   <li>
+      <a href="#group08/blueBasket01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01">blue basket 01</a>
+   </li>
+   <li>
+      <a href="#group08/blueBlock01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01">blue block 01</a>
+   </li>
+   <li>
+      <a href="#group08/blueCup01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/blueCup01">blue cup 01</a>
+   </li>
+   <li>
+      <a href="#ccyont" title="https://hcis.io/ontology/aicapstone/2026/ccyont">
+         <span>ccyont</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CollectableObject"
+         title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">
+         <span>collectable object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ContainerTarget"
+         title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">
+         <span>container target</span>
+      </a>
+   </li>
+   <li>
+      <a href="#group08/fork01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/fork01">fork 01</a>
+   </li>
+   <li>
+      <a href="#group08/greenBasket01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01">green basket 01</a>
+   </li>
+   <li>
+      <a href="#group08/greenBlock01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01">green block 01</a>
+   </li>
+   <li>
+      <a href="#group08/knife01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/knife01">knife 01</a>
+   </li>
+   <li>
+      <a href="#group08/pinkCup01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01">pink cup 01</a>
+   </li>
+   <li>
+      <a href="#group08/plate01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/plate01">plate 01</a>
+   </li>
+   <li>
+      <a href="#group08/redBasket01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/redBasket01">red basket 01</a>
+   </li>
+   <li>
+      <a href="#group08/redBlock01"
+         title="https://hcis.io/ontology/aicapstone/2026/group08/redBlock01">red block 01</a>
+   </li>
+   <li>
+      <a href="#ReferenceObject"
+         title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">
+         <span>reference object</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TargetObject"
+         title="https://hcis.io/ontology/aicapstone/2026/TargetObject">
+         <span>target object</span>
+      </a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">AI Capstone 2026 Course Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for AI Capstone 2026 Course Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by AI Capstone 2026 Course Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a></li>
+  <li><a href="#Basket" title="https://hcis.io/ontology/aicapstone/2026/Basket">basket</a></li>
+  <li><a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject"> <span>collectable object</span> </a></li>
+  <li><a href="#group08/ColorSortableObject" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject"> <span>Color Sortable Object</span> </a></li>
+  <li><a href="#group08/ColorSortingAffordance" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance">color sorting affordance</a></li>
+  <li><a href="#group08/ColorSortingBasket" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket"> <span>Color Sorting Basket</span> </a></li>
+  <li><a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget"> <span>container target</span> </a></li>
+  <li><a href="#ContainmentAffordance" title="https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance">containment affordance</a></li>
+  <li><a href="#Cup" title="https://hcis.io/ontology/aicapstone/2026/Cup">cup</a></li>
+  <li><a href="#EndEffector" title="https://hcis.io/ontology/aicapstone/2026/EndEffector">end effector</a></li>
+  <li><a href="#Fork" title="https://hcis.io/ontology/aicapstone/2026/Fork">fork</a></li>
+  <li><a href="#group08/GraspableObject" title="https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject">graspable object</a></li>
+  <li><a href="#GraspingAffordance" title="https://hcis.io/ontology/aicapstone/2026/GraspingAffordance">grasping affordance</a></li>
+  <li><a href="#Knife" title="https://hcis.io/ontology/aicapstone/2026/Knife">knife</a></li>
+  <li><a href="#ManipulationTask" title="https://hcis.io/ontology/aicapstone/2026/ManipulationTask">manipulation task</a></li>
+  <li><a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a></li>
+  <li><a href="#Plate" title="https://hcis.io/ontology/aicapstone/2026/Plate">plate</a></li>
+  <li><a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject"> <span>reference object</span> </a></li>
+  <li><a href="#RobotAgent" title="https://hcis.io/ontology/aicapstone/2026/RobotAgent">robot agent</a></li>
+  <li><a href="#StackabilityAffordance" title="https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance">stackability affordance</a></li>
+  <li><a href="#SupportAffordance" title="https://hcis.io/ontology/aicapstone/2026/SupportAffordance">support affordance</a></li>
+  <li><a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject"> <span>target object</span> </a></li>
+  <li><a href="#Task" title="https://hcis.io/ontology/aicapstone/2026/Task">task</a></li>
+  <li><a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a></li>
+  <li><a href="#ToyBlock" title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a></li>
+ </ul>
+ <div class="entity" id="Affordance">
+  <h3>affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Affordance</p>
+  <div class="comment">
+   <span class="markdown">An action possibility associated with an object in relation to a robot capability and task context.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortingAffordance" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance">color sorting affordance</a> <sup class="type-c" title="class">c</sup>, <a href="#ContainmentAffordance" title="https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance">containment affordance</a> <sup class="type-c" title="class">c</sup>, <a href="#GraspingAffordance" title="https://hcis.io/ontology/aicapstone/2026/GraspingAffordance">grasping affordance</a> <sup class="type-c" title="class">c</sup>, <a href="#StackabilityAffordance" title="https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance">stackability affordance</a> <sup class="type-c" title="class">c</sup>, <a href="#SupportAffordance" title="https://hcis.io/ontology/aicapstone/2026/SupportAffordance">support affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAffordance" title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Basket">
+  <h3>basket<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Basket</p>
+  <div class="comment">
+   <span class="markdown">A container target used to receive toy blocks in the toy-block-collection task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortingBasket" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket">Color Sorting Basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/baselineBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01">baseline basket 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CollectableObject">
+  <h3>collectable object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/CollectableObject</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#CollectableObject">named individual</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/ColorSortableObject">
+  <h3>Color Sortable Object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject</p>
+  <div class="comment">
+   <span class="markdown">color-sortable object</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasAffordance" title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#group08/ColorSortingAffordance" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance">color sorting affordance</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/ColorSortingAffordance">
+  <h3>color sorting affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance</p>
+  <div class="comment">
+   <span class="markdown">An affordance by which an object can be sorted by its color.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/ColorSortingBasket">
+  <h3>Color Sorting Basket<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Basket" title="https://hcis.io/ontology/aicapstone/2026/Basket">basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/blueBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01">blue basket 01</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#group08/greenBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01">green basket 01</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#group08/redBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/redBasket01">red basket 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContainerTarget">
+  <h3>container target<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ContainerTarget</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#ContainerTarget">named individual</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContainmentAffordance">
+  <h3>containment affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance</p>
+  <div class="comment">
+   <span class="markdown">An affordance by which an object can contain or receive other objects.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Cup">
+  <h3>cup<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Cup</p>
+  <div class="comment">
+   <span class="markdown">A container-like object used in the cup-stacking task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/blueCup01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueCup01">blue cup 01</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#group08/pinkCup01" title="https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01">pink cup 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EndEffector">
+  <h3>end effector<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/EndEffector</p>
+  <div class="comment">
+   <span class="markdown">A robot component used to physically interact with objects, such as a gripper.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#canBeManipulatedBy" title="https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy">can be manipulated by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Fork">
+  <h3>fork<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Fork</p>
+  <div class="comment">
+   <span class="markdown">A cutlery object to be placed in the cutlery-arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/fork01" title="https://hcis.io/ontology/aicapstone/2026/group08/fork01">fork 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/GraspableObject">
+  <h3>graspable object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#hasAffordance" title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#GraspingAffordance" title="https://hcis.io/ontology/aicapstone/2026/GraspingAffordance">grasping affordance</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GraspingAffordance">
+  <h3>grasping affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/GraspingAffordance</p>
+  <div class="comment">
+   <span class="markdown">An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Knife">
+  <h3>knife<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Knife</p>
+  <div class="comment">
+   <span class="markdown">A cutlery object to be placed in the cutlery-arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/knife01" title="https://hcis.io/ontology/aicapstone/2026/group08/knife01">knife 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ManipulationTask">
+  <h3>manipulation task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ManipulationTask</p>
+  <div class="comment">
+   <span class="markdown">A task in which a robot changes the pose, state, or arrangement of physical objects.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Task" title="https://hcis.io/ontology/aicapstone/2026/Task">task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PhysicalObject">
+  <h3>physical object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/PhysicalObject</p>
+  <div class="comment">
+   <span class="markdown">A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortableObject" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject">Color Sortable Object</a> <sup class="type-c" title="class">c</sup>, <a href="#Basket" title="https://hcis.io/ontology/aicapstone/2026/Basket">basket</a> <sup class="type-c" title="class">c</sup>, <a href="#Cup" title="https://hcis.io/ontology/aicapstone/2026/Cup">cup</a> <sup class="type-c" title="class">c</sup>, <a href="#Fork" title="https://hcis.io/ontology/aicapstone/2026/Fork">fork</a> <sup class="type-c" title="class">c</sup>, <a href="#group08/GraspableObject" title="https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject">graspable object</a> <sup class="type-c" title="class">c</sup>, <a href="#Knife" title="https://hcis.io/ontology/aicapstone/2026/Knife">knife</a> <sup class="type-c" title="class">c</sup>, <a href="#Plate" title="https://hcis.io/ontology/aicapstone/2026/Plate">plate</a> <sup class="type-c" title="class">c</sup>, <a href="#ToyBlock" title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#canBeManipulatedBy" title="https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy">can be manipulated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAffordance" title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasApproxWidth" title="https://hcis.io/ontology/aicapstone/2026/hasApproxWidth">has approximate width</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/hasReferenceObject">has reference object</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetObject" title="https://hcis.io/ontology/aicapstone/2026/hasTargetObject">has target object</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Plate">
+  <h3>plate<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Plate</p>
+  <div class="comment">
+   <span class="markdown">A reference object used for arranging cutlery in the cutlery-arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/plate01" title="https://hcis.io/ontology/aicapstone/2026/group08/plate01">plate 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReferenceObject">
+  <h3>reference object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ReferenceObject</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">reference object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#ReferenceObject">named individual</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotAgent">
+  <h3>robot agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/RobotAgent</p>
+  <div class="comment">
+   <span class="markdown">A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment.</span>
+  </div>
+ </div>
+ <div class="entity" id="StackabilityAffordance">
+  <h3>stackability affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance</p>
+  <div class="comment">
+   <span class="markdown">An affordance by which an object can participate in a stacking relation with another object.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SupportAffordance">
+  <h3>support affordance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/SupportAffordance</p>
+  <div class="comment">
+   <span class="markdown">An affordance by which an object can support the placement or arrangement of other objects.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TargetObject">
+  <h3>target object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/TargetObject</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#TargetObject">named individual</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/Task</p>
+  <div class="comment">
+   <span class="markdown">A goal-directed activity to be performed or evaluated in the course project.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ManipulationTask" title="https://hcis.io/ontology/aicapstone/2026/ManipulationTask">manipulation task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/hasReferenceObject">has reference object</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetObject" title="https://hcis.io/ontology/aicapstone/2026/hasTargetObject">has target object</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TaskRole">
+  <h3>task role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/TaskRole</p>
+  <div class="comment">
+   <span class="markdown">A role that an object plays within a task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-c" title="class">c</sup>, <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-c" title="class">c</sup>, <a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">reference object</a> <sup class="type-c" title="class">c</sup>, <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ToyBlock">
+  <h3>toy block<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ToyBlock</p>
+  <div class="comment">
+   <span class="markdown">A small object to be collected into the basket in the toy-block-collection task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#group08/blueBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01">blue block 01</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#group08/greenBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01">green block 01</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#group08/redBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/redBlock01">red block 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#canBeManipulatedBy" title="https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy">can be manipulated by</a></li>
+  <li><a href="#hasAffordance" title="https://hcis.io/ontology/aicapstone/2026/hasAffordance">has affordance</a></li>
+  <li><a href="#hasReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/hasReferenceObject">has reference object</a></li>
+  <li><a href="#hasTargetObject" title="https://hcis.io/ontology/aicapstone/2026/hasTargetObject">has target object</a></li>
+  <li><a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a></li>
+ </ul>
+ <div class="entity" id="canBeManipulatedBy">
+  <h3>can be manipulated by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy</p>
+  <div class="comment">
+   <span class="markdown">Relates a physical object to an end effector capable of manipulating it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EndEffector" title="https://hcis.io/ontology/aicapstone/2026/EndEffector">end effector</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAffordance">
+  <h3>has affordance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasAffordance</p>
+  <div class="comment">
+   <span class="markdown">Relates a physical object to an affordance associated with that object in the task context.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Affordance" title="https://hcis.io/ontology/aicapstone/2026/Affordance">affordance</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasReferenceObject">
+  <h3>has reference object<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasReferenceObject</p>
+  <div class="comment">
+   <span class="markdown">Relates a task to a physical object used as a spatial or semantic reference.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://hcis.io/ontology/aicapstone/2026/Task">task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTargetObject">
+  <h3>has target object<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasTargetObject</p>
+  <div class="comment">
+   <span class="markdown">Relates a task to a physical object that is directly acted upon in that task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://hcis.io/ontology/aicapstone/2026/Task">task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTaskRole">
+  <h3>has task role<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasTaskRole</p>
+  <div class="comment">
+   <span class="markdown">Relates a physical object to the role it plays in a task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TaskRole" title="https://hcis.io/ontology/aicapstone/2026/TaskRole">task role</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasApproxWidth" title="https://hcis.io/ontology/aicapstone/2026/hasApproxWidth">has approximate width</a></li>
+  <li><a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a></li>
+  <li><a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a></li>
+  <li><a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a></li>
+ </ul>
+ <div class="entity" id="hasApproxWidth">
+  <h3>has approximate width<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasApproxWidth</p>
+  <div class="comment">
+   <span class="markdown">Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasColor">
+  <h3>has color<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasColor</p>
+  <div class="comment">
+   <span class="markdown">Records the perceived or assigned color of a physical object.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasObjectLabel">
+  <h3>has object label<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasObjectLabel</p>
+  <div class="comment">
+   <span class="markdown">Records the object label used by perception, simulation, or task documentation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPoseFrame">
+  <h3>has pose frame<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/hasPoseFrame</p>
+  <div class="comment">
+   <span class="markdown">Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PhysicalObject" title="https://hcis.io/ontology/aicapstone/2026/PhysicalObject">physical object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/mbox" title="http://xmlns.com/foaf/0.1/mbox"> <span>mbox</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name"> <span>name</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/mbox">
+  <h3>mbox<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/mbox</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/name">
+  <h3>name<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/name</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#group08/baselineBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01">baseline basket 01</a></li>
+  <li><a href="#group08/blueBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01">blue basket 01</a></li>
+  <li><a href="#group08/blueBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01">blue block 01</a></li>
+  <li><a href="#group08/blueCup01" title="https://hcis.io/ontology/aicapstone/2026/group08/blueCup01">blue cup 01</a></li>
+  <li><a href="#ccyont" title="https://hcis.io/ontology/aicapstone/2026/ccyont"> <span>ccyont</span> </a></li>
+  <li><a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject"> <span>collectable object</span> </a></li>
+  <li><a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget"> <span>container target</span> </a></li>
+  <li><a href="#group08/fork01" title="https://hcis.io/ontology/aicapstone/2026/group08/fork01">fork 01</a></li>
+  <li><a href="#group08/greenBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01">green basket 01</a></li>
+  <li><a href="#group08/greenBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01">green block 01</a></li>
+  <li><a href="#group08/knife01" title="https://hcis.io/ontology/aicapstone/2026/group08/knife01">knife 01</a></li>
+  <li><a href="#group08/pinkCup01" title="https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01">pink cup 01</a></li>
+  <li><a href="#group08/plate01" title="https://hcis.io/ontology/aicapstone/2026/group08/plate01">plate 01</a></li>
+  <li><a href="#group08/redBasket01" title="https://hcis.io/ontology/aicapstone/2026/group08/redBasket01">red basket 01</a></li>
+  <li><a href="#group08/redBlock01" title="https://hcis.io/ontology/aicapstone/2026/group08/redBlock01">red block 01</a></li>
+  <li><a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject"> <span>reference object</span> </a></li>
+  <li><a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject"> <span>target object</span> </a></li>
+ </ul>
+ <div class="entity" id="group08/baselineBasket01">
+  <h3>baseline basket 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01</p>
+  <div class="comment">
+   <span class="markdown">The baseline basket instance defined by Group 08 for the baseline toyblock-collecting task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Basket" title="https://hcis.io/ontology/aicapstone/2026/Basket">basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"baseline_basket"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_baseline_basket"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/blueBasket01">
+  <h3>blue basket 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01</p>
+  <div class="comment">
+   <span class="markdown">The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortingBasket" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket">Color Sorting Basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue_basket"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_blue_basket"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/blueBlock01">
+  <h3>blue block 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01</p>
+  <div class="comment">
+   <span class="markdown">The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ToyBlock" title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue_block"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_blue_block"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/blueCup01">
+  <h3>blue cup 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/blueCup01</p>
+  <div class="comment">
+   <span class="markdown">The blue cup instance defined by Group 08 for the baseline cup-stacking task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Cup" title="https://hcis.io/ontology/aicapstone/2026/Cup">cup</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"blue_cup"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_blue_cup"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ccyont">
+  <h3>ccyont<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ccyont</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/mbox" target="_blank" title="http://xmlns.com/foaf/0.1/mbox">mbox</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="mailto:ccy@hptp.org" target="_blank" title="mailto:ccy@hptp.org">mailto:ccy@hptp.org</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Chun-yien Chang"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CollectableObject">
+  <h3>collectable object<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/CollectableObject</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#CollectableObject">class</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContainerTarget">
+  <h3>container target<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ContainerTarget</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#ContainerTarget">class</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/fork01">
+  <h3>fork 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/fork01</p>
+  <div class="comment">
+   <span class="markdown">The fork instance defined by Group 08 for the baseline cutlery arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Fork" title="https://hcis.io/ontology/aicapstone/2026/Fork">fork</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"fork"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_fork"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/greenBasket01">
+  <h3>green basket 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01</p>
+  <div class="comment">
+   <span class="markdown">The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortingBasket" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket">Color Sorting Basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"green"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"green_basket"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_green/basket"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/greenBlock01">
+  <h3>green block 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01</p>
+  <div class="comment">
+   <span class="markdown">The green block instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ToyBlock" title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"green"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"green_block"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_green_block"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/knife01">
+  <h3>knife 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/knife01</p>
+  <div class="comment">
+   <span class="markdown">The knife instance defined by Group 08 for the baseline cutlery arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Knife" title="https://hcis.io/ontology/aicapstone/2026/Knife">knife</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"knife"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_knife"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/pinkCup01">
+  <h3>pink cup 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01</p>
+  <div class="comment">
+   <span class="markdown">The pink cup instance defined by Group 08 for the baseline cup-stacking task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Cup" title="https://hcis.io/ontology/aicapstone/2026/Cup">cup</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">reference object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"pink"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"pink_cup"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_pink_cup"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/plate01">
+  <h3>plate 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/plate01</p>
+  <div class="comment">
+   <span class="markdown">The plate instance defined by Group 08 for the baseline cutlery arrangement task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Plate" title="https://hcis.io/ontology/aicapstone/2026/Plate">plate</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">reference object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"plate"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_plate"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/redBasket01">
+  <h3>red basket 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/redBasket01</p>
+  <div class="comment">
+   <span class="markdown">The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#group08/ColorSortingBasket" title="https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket">Color Sorting Basket</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#ContainerTarget" title="https://hcis.io/ontology/aicapstone/2026/ContainerTarget">container target</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"red"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"red_basket"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_red_basket"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="group08/redBlock01">
+  <h3>red block 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/group08/redBlock01</p>
+  <div class="comment">
+   <span class="markdown">The red block instance defined by Group 08 for toy-block collection and color-sorting tasks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ToyBlock" title="https://hcis.io/ontology/aicapstone/2026/ToyBlock">toy block</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasTaskRole" title="https://hcis.io/ontology/aicapstone/2026/hasTaskRole">has task role</a> <sup class="type-op" title="object property">op</sup> <a href="#CollectableObject" title="https://hcis.io/ontology/aicapstone/2026/CollectableObject">collectable object</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasColor" title="https://hcis.io/ontology/aicapstone/2026/hasColor">has color</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"red"</span>
+   </dd>
+   <dd>
+    <a href="#hasObjectLabel" title="https://hcis.io/ontology/aicapstone/2026/hasObjectLabel">has object label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"red_block"</span>
+   </dd>
+   <dd>
+    <a href="#hasPoseFrame" title="https://hcis.io/ontology/aicapstone/2026/hasPoseFrame">has pose frame</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"world/object_red_block"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReferenceObject">
+  <h3>reference object<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/ReferenceObject</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ReferenceObject" title="https://hcis.io/ontology/aicapstone/2026/ReferenceObject">reference object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#ReferenceObject">class</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TargetObject">
+  <h3>target object<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://hcis.io/ontology/aicapstone/2026/TargetObject</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#TargetObject" title="https://hcis.io/ontology/aicapstone/2026/TargetObject">target object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#TargetObject">class</a>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

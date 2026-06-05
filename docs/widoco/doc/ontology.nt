@@ -1,0 +1,512 @@
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/dc/terms/created> "2026-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/dc/terms/creator> <https://hcis.io/ontology/aicapstone/2026/ccyont> .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/dc/terms/description> "This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."@en .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/dc/terms/title> "AI Capstone 2026 Course Ontology"@en .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cap" .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://hcis.io/ontology/aicapstone/2026/" .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://www.w3.org/2000/01/rdf-schema#comment> "A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."@en .
+<https://hcis.io/ontology/aicapstone/2026/group08> <http://www.w3.org/2000/01/rdf-schema#label> "AI Capstone 2026 Course Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy
+<https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://hcis.io/ontology/aicapstone/2026/EndEffector> .
+<https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a physical object to an end effector capable of manipulating it."@en .
+<https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "can be manipulated by"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasAffordance
+<https://hcis.io/ontology/aicapstone/2026/hasAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/hasAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a physical object to an affordance associated with that object in the task context."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "has affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasReferenceObject
+<https://hcis.io/ontology/aicapstone/2026/hasReferenceObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasReferenceObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/Task> .
+<https://hcis.io/ontology/aicapstone/2026/hasReferenceObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasReferenceObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a task to a physical object used as a spatial or semantic reference."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasReferenceObject> <http://www.w3.org/2000/01/rdf-schema#label> "has reference object"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasTargetObject
+<https://hcis.io/ontology/aicapstone/2026/hasTargetObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasTargetObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/Task> .
+<https://hcis.io/ontology/aicapstone/2026/hasTargetObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasTargetObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a task to a physical object that is directly acted upon in that task."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasTargetObject> <http://www.w3.org/2000/01/rdf-schema#label> "has target object"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasTaskRole
+<https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://hcis.io/ontology/aicapstone/2026/TaskRole> .
+<https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a physical object to the role it plays in a task."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <http://www.w3.org/2000/01/rdf-schema#label> "has task role"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasApproxWidth
+<https://hcis.io/ontology/aicapstone/2026/hasApproxWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasApproxWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasApproxWidth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://hcis.io/ontology/aicapstone/2026/hasApproxWidth> <http://www.w3.org/2000/01/rdf-schema#comment> "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasApproxWidth> <http://www.w3.org/2000/01/rdf-schema#label> "has approximate width"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasColor
+<https://hcis.io/ontology/aicapstone/2026/hasColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasColor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasColor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hcis.io/ontology/aicapstone/2026/hasColor> <http://www.w3.org/2000/01/rdf-schema#comment> "Records the perceived or assigned color of a physical object."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasColor> <http://www.w3.org/2000/01/rdf-schema#label> "has color"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasObjectLabel
+<https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Records the object label used by perception, simulation, or task documentation."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> <http://www.w3.org/2000/01/rdf-schema#label> "has object label"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/hasPoseFrame
+<https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."@en .
+<https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> <http://www.w3.org/2000/01/rdf-schema#label> "has pose frame"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Affordance
+<https://hcis.io/ontology/aicapstone/2026/Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An action possibility associated with an object in relation to a robot capability and task context."@en .
+<https://hcis.io/ontology/aicapstone/2026/Affordance> <http://www.w3.org/2000/01/rdf-schema#label> "affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Basket
+<https://hcis.io/ontology/aicapstone/2026/Basket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Basket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/Basket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Basket> <http://www.w3.org/2000/01/rdf-schema#comment> "A container target used to receive toy blocks in the toy-block-collection task."@en .
+<https://hcis.io/ontology/aicapstone/2026/Basket> <http://www.w3.org/2000/01/rdf-schema#label> "basket"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/CollectableObject
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/TaskRole> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ContainerTarget
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/TaskRole> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance
+<https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance by which an object can contain or receive other objects."@en .
+<https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "containment affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Cup
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/2000/01/rdf-schema#comment> "A container-like object used in the cup-stacking task."@en .
+<https://hcis.io/ontology/aicapstone/2026/Cup> <http://www.w3.org/2000/01/rdf-schema#label> "cup"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/EndEffector
+<https://hcis.io/ontology/aicapstone/2026/EndEffector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/EndEffector> <http://www.w3.org/2000/01/rdf-schema#comment> "A robot component used to physically interact with objects, such as a gripper."@en .
+<https://hcis.io/ontology/aicapstone/2026/EndEffector> <http://www.w3.org/2000/01/rdf-schema#label> "end effector"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Fork
+<https://hcis.io/ontology/aicapstone/2026/Fork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Fork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/Fork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Fork> <http://www.w3.org/2000/01/rdf-schema#comment> "A cutlery object to be placed in the cutlery-arrangement task."@en .
+<https://hcis.io/ontology/aicapstone/2026/Fork> <http://www.w3.org/2000/01/rdf-schema#label> "fork"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/GraspingAffordance
+<https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."@en .
+<https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "grasping affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Knife
+<https://hcis.io/ontology/aicapstone/2026/Knife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Knife> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/Knife> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Knife> <http://www.w3.org/2000/01/rdf-schema#comment> "A cutlery object to be placed in the cutlery-arrangement task."@en .
+<https://hcis.io/ontology/aicapstone/2026/Knife> <http://www.w3.org/2000/01/rdf-schema#label> "knife"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ManipulationTask
+<https://hcis.io/ontology/aicapstone/2026/ManipulationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/ManipulationTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Task> .
+<https://hcis.io/ontology/aicapstone/2026/ManipulationTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A task in which a robot changes the pose, state, or arrangement of physical objects."@en .
+<https://hcis.io/ontology/aicapstone/2026/ManipulationTask> <http://www.w3.org/2000/01/rdf-schema#label> "manipulation task"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/PhysicalObject
+<https://hcis.io/ontology/aicapstone/2026/PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."@en .
+<https://hcis.io/ontology/aicapstone/2026/PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "physical object"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Plate
+<https://hcis.io/ontology/aicapstone/2026/Plate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Plate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/Plate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/SupportAffordance> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/Plate> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference object used for arranging cutlery in the cutlery-arrangement task."@en .
+<https://hcis.io/ontology/aicapstone/2026/Plate> <http://www.w3.org/2000/01/rdf-schema#label> "plate"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ReferenceObject
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/TaskRole> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/RobotAgent
+<https://hcis.io/ontology/aicapstone/2026/RobotAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/RobotAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."@en .
+<https://hcis.io/ontology/aicapstone/2026/RobotAgent> <http://www.w3.org/2000/01/rdf-schema#label> "robot agent"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance
+<https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance by which an object can participate in a stacking relation with another object."@en .
+<https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "stackability affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/SupportAffordance
+<https://hcis.io/ontology/aicapstone/2026/SupportAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/SupportAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/SupportAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance by which an object can support the placement or arrangement of other objects."@en .
+<https://hcis.io/ontology/aicapstone/2026/SupportAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "support affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/TargetObject
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/TaskRole> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/Task
+<https://hcis.io/ontology/aicapstone/2026/Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A goal-directed activity to be performed or evaluated in the course project."@en .
+<https://hcis.io/ontology/aicapstone/2026/Task> <http://www.w3.org/2000/01/rdf-schema#label> "task"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/TaskRole
+<https://hcis.io/ontology/aicapstone/2026/TaskRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/TaskRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an object plays within a task."@en .
+<https://hcis.io/ontology/aicapstone/2026/TaskRole> <http://www.w3.org/2000/01/rdf-schema#label> "task role"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ToyBlock
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/2000/01/rdf-schema#comment> "A small object to be collected into the basket in the toy-block-collection task."@en .
+<https://hcis.io/ontology/aicapstone/2026/ToyBlock> <http://www.w3.org/2000/01/rdf-schema#label> "toy block"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject> <http://www.w3.org/2000/01/rdf-schema#comment> "color-sortable object" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Affordance> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance by which an object can be sorted by its color." .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "color sorting affordance"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/Basket> .
+<https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject
+<https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://hcis.io/ontology/aicapstone/2026/GraspingAffordance> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://hcis.io/ontology/aicapstone/2026/hasAffordance> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hcis.io/ontology/aicapstone/2026/PhysicalObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject> <http://www.w3.org/2000/01/rdf-schema#label> "graspable object"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://hcis.io/ontology/aicapstone/2026/CollectableObject
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/CollectableObject> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ContainerTarget
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/ContainerTarget> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ReferenceObject
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/ReferenceObject> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/TargetObject
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/TargetObject> .
+# 
+# https://hcis.io/ontology/aicapstone/2026/ccyont
+<https://hcis.io/ontology/aicapstone/2026/ccyont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/ccyont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://hcis.io/ontology/aicapstone/2026/ccyont> <http://xmlns.com/foaf/0.1/mbox> <mailto:ccy@hptp.org> .
+<https://hcis.io/ontology/aicapstone/2026/ccyont> <http://xmlns.com/foaf/0.1/name> "Chun-yien Chang"@en .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Basket> .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ContainerTarget> .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "baseline_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_baseline_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <http://www.w3.org/2000/01/rdf-schema#comment> "The baseline basket instance defined by Group 08 for the baseline toyblock-collecting task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01> <http://www.w3.org/2000/01/rdf-schema#label> "baseline basket 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ContainerTarget> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "blue" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "blue_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_blue_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <http://www.w3.org/2000/01/rdf-schema#comment> "The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01> <http://www.w3.org/2000/01/rdf-schema#label> "blue basket 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/ToyBlock> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/CollectableObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "blue" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "blue_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_blue_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <http://www.w3.org/2000/01/rdf-schema#comment> "The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01> <http://www.w3.org/2000/01/rdf-schema#label> "blue block 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/blueCup01
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Cup> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/TargetObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "blue" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "blue_cup" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_blue_cup" .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <http://www.w3.org/2000/01/rdf-schema#comment> "The blue cup instance defined by Group 08 for the baseline cup-stacking task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/blueCup01> <http://www.w3.org/2000/01/rdf-schema#label> "blue cup 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/fork01
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Fork> .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/TargetObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "fork" .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_fork" .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <http://www.w3.org/2000/01/rdf-schema#comment> "The fork instance defined by Group 08 for the baseline cutlery arrangement task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/fork01> <http://www.w3.org/2000/01/rdf-schema#label> "fork 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ContainerTarget> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "green" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "green_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_green/basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <http://www.w3.org/2000/01/rdf-schema#comment> "The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01> <http://www.w3.org/2000/01/rdf-schema#label> "green basket 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/ToyBlock> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/CollectableObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "green" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "green_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_green_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <http://www.w3.org/2000/01/rdf-schema#comment> "The green block instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01> <http://www.w3.org/2000/01/rdf-schema#label> "green block 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/knife01
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Knife> .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/TargetObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "knife" .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_knife" .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <http://www.w3.org/2000/01/rdf-schema#comment> "The knife instance defined by Group 08 for the baseline cutlery arrangement task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/knife01> <http://www.w3.org/2000/01/rdf-schema#label> "knife 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Cup> .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ReferenceObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "pink" .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "pink_cup" .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_pink_cup" .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <http://www.w3.org/2000/01/rdf-schema#comment> "The pink cup instance defined by Group 08 for the baseline cup-stacking task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01> <http://www.w3.org/2000/01/rdf-schema#label> "pink cup 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/plate01
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/Plate> .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ReferenceObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "plate" .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_plate" .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <http://www.w3.org/2000/01/rdf-schema#comment> "The plate instance defined by Group 08 for the baseline cutlery arrangement task." .
+<https://hcis.io/ontology/aicapstone/2026/group08/plate01> <http://www.w3.org/2000/01/rdf-schema#label> "plate 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/redBasket01
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/ContainerTarget> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "red" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "red_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_red_basket" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <http://www.w3.org/2000/01/rdf-schema#comment> "The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBasket01> <http://www.w3.org/2000/01/rdf-schema#label> "red basket 01" .
+# 
+# https://hcis.io/ontology/aicapstone/2026/group08/redBlock01
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://hcis.io/ontology/aicapstone/2026/ToyBlock> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <https://hcis.io/ontology/aicapstone/2026/hasTaskRole> <https://hcis.io/ontology/aicapstone/2026/CollectableObject> .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <https://hcis.io/ontology/aicapstone/2026/hasColor> "red" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <https://hcis.io/ontology/aicapstone/2026/hasObjectLabel> "red_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <https://hcis.io/ontology/aicapstone/2026/hasPoseFrame> "world/object_red_block" .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <http://www.w3.org/2000/01/rdf-schema#comment> "The red block instance defined by Group 08 for toy-block collection and color-sorting tasks." .
+<https://hcis.io/ontology/aicapstone/2026/group08/redBlock01> <http://www.w3.org/2000/01/rdf-schema#label> "red block 01" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A task role for an object that should be collected into another object or location."@en .
+<https://hcis.io/ontology/aicapstone/2026/CollectableObject> <http://www.w3.org/2000/01/rdf-schema#label> "collectable object"@en .
+# 
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "A task role for an object that receives or contains other objects."@en .
+<https://hcis.io/ontology/aicapstone/2026/ContainerTarget> <http://www.w3.org/2000/01/rdf-schema#label> "container target"@en .
+# 
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A task role for an object used as a spatial or semantic reference for arranging other objects."@en .
+<https://hcis.io/ontology/aicapstone/2026/ReferenceObject> <http://www.w3.org/2000/01/rdf-schema#label> "reference object"@en .
+# 
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A task role for an object that is directly acted upon or manipulated."@en .
+<https://hcis.io/ontology/aicapstone/2026/TargetObject> <http://www.w3.org/2000/01/rdf-schema#label> "target object"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,980 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+    }, {
+      "@id" : "_:genid16"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/SupportAffordance"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+    }, {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An action possibility associated with an object in relation to a robot capability and task context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Basket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A container target used to receive toy blocks in the toy-block-collection task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "basket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/CollectableObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/CollectableObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task role for an object that should be collected into another object or location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "collectable object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task role for an object that receives or contains other objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "container target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainmentAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An affordance by which an object can contain or receive other objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "containment affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Cup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A container-like object used in the cup-stacking task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/EndEffector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A robot component used to physically interact with objects, such as a gripper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "end effector"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Fork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A cutlery object to be placed in the cutlery-arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/GraspingAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "grasping affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Knife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A cutlery object to be placed in the cutlery-arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "knife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ManipulationTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task in which a robot changes the pose, state, or arrangement of physical objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manipulation task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Task"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "physical object"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Plate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A reference object used for arranging cutlery in the cutlery-arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "plate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ReferenceObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ReferenceObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task role for an object used as a spatial or semantic reference for arranging other objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reference object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/RobotAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "robot agent"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/StackabilityAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An affordance by which an object can participate in a stacking relation with another object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stackability affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/SupportAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An affordance by which an object can support the placement or arrangement of other objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "support affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/TargetObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TargetObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task role for an object that is directly acted upon or manipulated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "target object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A goal-directed activity to be performed or evaluated in the course project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "task"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A role that an object plays within a task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "task role"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ToyBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A small object to be collected into the basket in the toy-block-collection task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "toy block"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/canBeManipulatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a physical object to an end effector capable of manipulating it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "can be manipulated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/EndEffector"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/ccyont",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:ccy@hptp.org"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Chun-yien Chang"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-22"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ccyont"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "AI Capstone 2026 Course Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cap"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://hcis.io/ontology/aicapstone/2026/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AI Capstone 2026 Course Ontology"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortableObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "color-sortable object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An affordance by which an object can be sorted by its color."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "color sorting affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Basket"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/GraspableObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "graspable object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/baselineBasket01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Basket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The baseline basket instance defined by Group 08 for the baseline toyblock-collecting task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "baseline basket 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "baseline_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_baseline_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/blueBasket01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The blue basket instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "blue basket 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "blue"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "blue_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_blue_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/blueBlock01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ToyBlock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The blue block instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "blue block 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "blue"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "blue_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_blue_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/CollectableObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/blueCup01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Cup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The blue cup instance defined by Group 08 for the baseline cup-stacking task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "blue cup 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "blue"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "blue_cup"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_blue_cup"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TargetObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/fork01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Fork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The fork instance defined by Group 08 for the baseline cutlery arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fork 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "fork"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_fork"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TargetObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/greenBasket01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The green basket instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "green basket 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "green"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "green_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_green/basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/greenBlock01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ToyBlock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The green block instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "green block 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "green"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "green_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_green_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/CollectableObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/knife01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Knife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The knife instance defined by Group 08 for the baseline cutlery arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "knife 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "knife"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_knife"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TargetObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/pinkCup01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Cup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The pink cup instance defined by Group 08 for the baseline cup-stacking task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pink cup 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "pink"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "pink_cup"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_pink_cup"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ReferenceObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/plate01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Plate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The plate instance defined by Group 08 for the baseline cutlery arrangement task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "plate 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "plate"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_plate"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ReferenceObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/redBasket01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/ColorSortingBasket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The red basket instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "red basket 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "red"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "red_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_red_basket"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ContainerTarget"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/group08/redBlock01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/ToyBlock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The red block instance defined by Group 08 for toy-block collection and color-sorting tasks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "red block 01"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasColor" : [ {
+    "@value" : "red"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel" : [ {
+    "@value" : "red_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame" : [ {
+    "@value" : "world/object_red_block"
+  } ],
+  "https://hcis.io/ontology/aicapstone/2026/hasTaskRole" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/CollectableObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a physical object to an affordance associated with that object in the task context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Affordance"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasApproxWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has approximate width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasColor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records the perceived or assigned color of a physical object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has color"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasObjectLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records the object label used by perception, simulation, or task documentation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has object label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasPoseFrame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has pose frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasReferenceObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a task to a physical object used as a spatial or semantic reference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reference object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasTargetObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a task to a physical object that is directly acted upon in that task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has target object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ]
+}, {
+  "@id" : "https://hcis.io/ontology/aicapstone/2026/hasTaskRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a physical object to the role it plays in a task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has task role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hcis.io/ontology/aicapstone/2026/TaskRole"
+  } ]
+} ]

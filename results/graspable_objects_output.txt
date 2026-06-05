@@ -1,7 +1,14 @@
-g08:blueBlock01	    blue_block^^xsd:string	cap:CollectableObject	
-g08:blueCup01	    blue_cup^^xsd:string	cap:TargetObject	
-g08:fork01	        fork^^xsd:string	    cap:TargetObject	
-g08:greenBlock01	green_block^^xsd:string	cap:CollectableObject	
-g08:knife01	        knife^^xsd:string	    cap:TargetObject	
-g08:pinkCup01	    pink_cup^^xsd:string	cap:ReferenceObject	
-g08:redBlock01	    red_block^^xsd:string	cap:CollectableObject
+QUERY: graspable_objects
+Reasoner: owlrl (OWL RL / RDF(S) closure)
+=================================================================
+obj                    label                  role
+-----------------------------------------------------------------
+blueBlock01            blue_block             CollectableObject
+blueCup01              blue_cup               TargetObject
+fork01                 fork                   TargetObject
+greenBlock01           green_block            CollectableObject
+knife01                knife                  TargetObject
+pinkCup01              pink_cup               ReferenceObject
+redBlock01             red_block              CollectableObject
+
+Total inferred GraspableObject instances: 7
