@@ -15,7 +15,7 @@ print(f"Loaded {len(g)} triples (asserted)")
 owlrl.DeductiveClosure(owlrl.OWLRL_Semantics).expand(g)
 print(f"After reasoning: {len(g)} triples (inferred)")
 
-g.serialize(ROOT / "ontology" / "inferred-results.ttl", format="turtle")
+g.serialize(ROOT / "ontology" / "inferred-results-python.ttl", format="turtle")
 print("Exported: inferred-results.ttl\n")
 
 # ── Query 1: graspable_objects ───────────────────────────────────
