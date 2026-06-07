@@ -233,8 +233,8 @@ ontology/inferred-results.ttl
 | --------------------------------------- | ------------------------------------ |
 | ontology/group-ontology.ttl             | Main ontology                        |
 | ontology/inferred-results.ttl           | Ontology with inferred axioms        |
-| queries/graspable_object.rp             | Query: all GraspableObjects          |
-| queries/color_sortable_objects.rp       | Query: all ColorSortableObjects      |
+| queries/graspable_object.rq             | Query: all GraspableObjects          |
+| queries/color_sortable_objects.rq       | Query: all ColorSortableObjects      |
 | queries/task_objects.rq                 | Query all task objects in python pipeline |
 | results/...                             | Query output and screenshots         |
 | README.md                               | Project documentation                |
