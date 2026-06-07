@@ -193,7 +193,7 @@ are inferred through the `ColorSortingAffordance` definition rather than manuall
 
 ---
 
-## 9. Generation of inferred-results.ttl
+## 9. Generation of inferred-results-protege.ttl
 
 The inferred ontology was generated using Protégé and the HermiT reasoner.
 
@@ -235,6 +235,6 @@ ontology/inferred-results.ttl
 | ontology/inferred-results.ttl           | Ontology with inferred axioms        |
 | queries/graspable_object.rp             | Query: all GraspableObjects          |
 | queries/color_sortable_objects.rp       | Query: all ColorSortableObjects      |
-| queries/task_objects.rq                 | Query: all task objects (combined)   |
+| queries/task_objects.rq                 | Query all task objects in python pipeline |
 | results/...                             | Query output and screenshots         |
 | README.md                               | Project documentation                |
