@@ -18,7 +18,7 @@ Ontology-Based Semantic Modeling and Reasoning for Physical AI Tasks
 
 ---
 
-## 2. Selected Task(s)
+## 2. Selected Tasks
 
 ### Baseline Task
 
@@ -113,6 +113,8 @@ Examples:
 * g08:ColorSortableObject
 * g08:ColorSortingBasket
 * g08:blueBlock01
+
+**Note on GraspableObject**: In our implementation, GraspableObject was intentionally assigned to the local group namespace (g08:GraspableObject) rather than the cap: prefix. This design choice was maintained throughout the development pipeline to preserve the integrity of our generated graphs and query results.
 
 ---
 
@@ -229,12 +231,18 @@ ontology/inferred-results.ttl
 
 ## 10. Project Files
 
+Please refer to report.pdf for further details
+
 | File                                    | Description                          |
 | --------------------------------------- | ------------------------------------ |
 | ontology/group-ontology.ttl             | Main ontology                        |
-| ontology/inferred-results.ttl           | Ontology with inferred axioms        |
+| ontology/inferred-results-protere.ttl           | Ontology with inferred axioms from protege       |
+| ontology/inferred-results-python.ttl           | Ontology with inferred axioms from run_reasoning.py       |
+| doc/widoco/doc | contents of widoco
 | queries/graspable_object.rq             | Query: all GraspableObjects          |
 | queries/color_sortable_objects.rq       | Query: all ColorSortableObjects      |
 | queries/task_objects.rq                 | Query all task objects in python pipeline |
 | results/...                             | Query output and screenshots         |
+| src/run_reasoning.py | python pipeline work |
 | README.md                               | Project documentation                |
+| report.pdf                               | Project report                |
